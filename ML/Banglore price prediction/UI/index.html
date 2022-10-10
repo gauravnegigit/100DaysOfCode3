@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banglore home Price prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="img"></div>
+    <form class="form">
+      <h2>Area (Square Feet)</h2>
+      <input type="text" class="area" id = "uiSqft" name="Squareft" value="1000" />
+      <h2>BHK</h2>
+      <div class="switch-field">
+        <input type="text" id="radio-bhk1" name="BHK" value="1" />
+        <label for="radio-bhk1">1</label>
+        <input type="text" id="radio-bhk2" name="BHK" value="2" />
+        <label for="radio-bhk2">2</label>
+        <input type="text" id="radio-bhk3" name="BHK" value="3" />
+        <label for="radio-bhk3">3</label>
+        <input type="text" id="radio-bhk4" name="BHK" value="4" />
+        <label for="radio-bhk4">4</label>
+        <input type="text" id="radio-bhk5" name="BHK" value="5" />
+        <label for="radio-bhk5">5</label>
+      </div>
+      <h2>Bath</h2>
+      <div class="switch-field">
+        <input type="text" id="radio-bath1" name="BATH" value="1" />
+        <label for="radio-bath1">1</label>
+        <input type="text" id="radio-bath2" name="BATH" value="2" />
+        <label for="radio-bath2">2</label>
+        <input type="text" id="radio-bath3" name="BATH" value="3" />
+        <label for="radio-bath3">3</label>
+        <input type="text" id="radiobathk4" name="BATH" value="4" />
+        <label for="radio-bath4">4</label>
+        <input type="text" id="radio-bath5" name="BATH" value="5" />
+        <label for="radio-bath5">5</label>
+      </div>
+      <h2>Location</h2>
+      <div class="switch-field">
+        <select name="location" id="uiLocations" class="location">
+          <option value="" disabled="disabled" selected="selected">
+            Choose a Location
+          </option>
+        </select>
+      </div>
+    </form>
+
+    <div class="final">
+      <button class="submit" onclick="onClickEstimatePrice()" type="button">
+      Estimate Price
+      </button>
+      <div id="uiEstimatedPrice" class="result"><h2></h2></div>
+    </div>
+  </body>
+<script src="script.js"></script>
+
+</html>
